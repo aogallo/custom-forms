@@ -1,7 +1,13 @@
-import './App.css'
+import { Header } from './components/Header'
+import { Wizard } from './components/Wizard/Wizard'
 
 function Layout() {
-  return <main>Initial Project</main>
+  return (
+    <main>
+      <Header />
+      <Wizard />
+    </main>
+  )
 }
 
 export default Layout
