@@ -1,20 +1,24 @@
 import { useState } from 'react'
 import { CustomerDetail } from '../CustomerDetail/CustomerDetail'
 import { contentButtons, contentWizard } from './Wizard.css'
+import { Tratamient } from '../Tratamient/Tratamient'
 
-const steps = [
-  {
-    step: 'customeDetail',
-    componenet: <CustomerDetail />,
-  },
-  {
-    step: 'tratamient',
-    componenet: <h1>Tratamientos</h1>,
-  },
-]
+type CustomerDetailType = {
+  name: string
+  address: string
+  age: number
+  phone: string
+}
+
+type TeethTratamientType = {
+  customerDetail: CustomerDetailType
+}
 
 export const Wizard = () => {
-  const [step, setStep] = useState(0)
+  const [step, setStep] = useState(1)
+  const [teethTratamient, setTeethTratamient] = useState<TeethTratamientType>(
+    {}
+  )
   const handleNext = () => {
     if (step + 1 < steps.length) {
       setStep(step + 1)
@@ -26,6 +30,17 @@ export const Wizard = () => {
       setStep(step - 1)
     }
   }
+
+  const steps = [
+    {
+      step: 'customeDetail',
+      componenet: <CustomerDetail />,
+    },
+    {
+      step: 'tratamient',
+      componenet: <Tratamient />,
+    },
+  ]
 
   return (
     <div className={contentWizard}>
