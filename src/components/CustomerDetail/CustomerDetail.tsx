@@ -6,7 +6,7 @@ import {
   titleCustomerDetail,
 } from './CustomerDetail.css'
 
-// type CustomerDetailProps = {}
+type CustomerDetailProps = {}
 
 export const CustomerDetail = () => {
   return (
