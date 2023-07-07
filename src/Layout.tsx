@@ -3,7 +3,7 @@ import { Wizard } from './components/Wizard/Wizard'
 
 function Layout() {
   return (
-    <main>
+    <main className='content'>
       <Header />
       <Wizard />
     </main>

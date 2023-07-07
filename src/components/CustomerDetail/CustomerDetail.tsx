@@ -1,22 +1,43 @@
-import React from 'react'
-import { titleCustomer } from './CustomerDetail.css'
+import {
+  containerCustomerDetail,
+  formCustomerDetail,
+  inputForm,
+  labelForm,
+  titleCustomerDetail,
+} from './CustomerDetail.css'
 
-export const CustomerDetail = (props: {}) => {
+type CustomerDetailProps = {}
+
+export const CustomerDetail = () => {
   return (
-    <div>
-      <strong className={titleCustomer}>FICHA CLÍNICA</strong>
-      <form>
-        <label htmlFor='name'>Nombre del paciente:</label>
-        <input type='text' name='name' id='name' />
+    <div className={containerCustomerDetail}>
+      <strong className={titleCustomerDetail}>FICHA CLÍNICA</strong>
+      <form className={formCustomerDetail}>
+        <label className={labelForm} htmlFor='name'>
+          Nombre del paciente:
+        </label>
+        <input className={inputForm} type='text' name='name' id='name' />
 
-        <label htmlFor='age'>Edad:</label>
-        <input type='number' name='age' id='age' />
+        <label className={labelForm} htmlFor='age'>
+          Edad:
+        </label>
+        <input className={inputForm} type='number' name='age' id='age' />
 
-        <label htmlFor='address'>Dirección:</label>
-        <input type='text' name='address' id='address' />
+        <label className={labelForm} htmlFor='address'>
+          Dirección:
+        </label>
+        <input className={inputForm} type='text' name='address' id='address' />
 
-        <label htmlFor='phone'>Phone:</label>
-        <input type='text' name='phone' id='phone' />
+        <label className={labelForm} htmlFor='phone'>
+          Teléfono:
+        </label>
+        <input
+          className={inputForm}
+          type='text'
+          name='phone'
+          id='phone'
+          pattern='[0-9]+'
+        />
       </form>
     </div>
   )
