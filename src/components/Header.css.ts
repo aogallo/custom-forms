@@ -17,6 +17,7 @@ export const logo = style({
 
 export const title = style({
   width: 'inherit',
+  marginLeft: '20px',
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',

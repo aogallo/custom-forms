@@ -3,7 +3,7 @@ import {
   question,
   titleTratamient,
 } from '../Tratamient/Tratamient.css'
-import { teeths } from './OtherDisease.css'
+import { containerImageText, teeths, textAreaTeeth } from './OtherDisease.css'
 
 export const OtherDesease = () => {
   return (
@@ -95,12 +95,13 @@ export const OtherDesease = () => {
         <li>
           <div className={question}>
             Otras enfermedades:
-            <input type='text' name='otherDisease' />
+            {/* <input type='text' name='otherDisease' /> */}
           </div>
         </li>
       </ol>
-      <div>
+      <div className={containerImageText}>
         <img className={teeths} src='/teeths.png' alt='Dientes' />
+        <textarea className={textAreaTeeth} />
       </div>
     </div>
   )

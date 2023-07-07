@@ -2,12 +2,9 @@ import { tableTratamientPlan } from './TratamientPlan.css'
 
 export const TratamientPlanTable = () => {
   return (
-    <div className={tableTratamientPlan}>
-      <table>
+    <div>
+      <table className={tableTratamientPlan}>
         <thead>
-          <tr>
-            <th>PLAN DE TRATAMIENTO</th>
-          </tr>
           <tr>
             <th>No. de pieza</th>
             <th>Tratamiento</th>

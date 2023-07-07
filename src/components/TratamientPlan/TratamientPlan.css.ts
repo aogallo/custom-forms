@@ -21,4 +21,6 @@ export const tableTratamientPlan = style({
   gridArea: 'table',
   border: '1px',
   borderColor: 'red',
+  width: '100%',
+  backgroundColor: 'red',
 })

@@ -73,10 +73,10 @@ export const Wizard = () => {
       step: 'tratamientSectionTwo',
       componenet: <OtherDesease />,
     },
-    {
-      step: 'tratamientPlan',
-      componenet: <TratamientPlan />,
-    },
+    // {
+    //   step: 'tratamientPlan',
+    //   componenet: <TratamientPlan />,
+    // },
   ]
 
   return (
