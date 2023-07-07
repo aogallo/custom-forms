@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { CustomerDetail } from '../CustomerDetail/CustomerDetail'
 import { contentButtons, contentWizard } from './Wizard.css'
 import { Tratamient } from '../Tratamient/Tratamient'
-import { TratamientPlan } from '../TratamientPlan/TratamientPlan'
+// import { TratamientPlan } from '../TratamientPlan/TratamientPlan'
 import { OtherDesease } from '../OtherDisease/OtherDesease'
 
 type CustomerDetailType = {
@@ -59,10 +59,9 @@ export const Wizard = () => {
     {
       step: 'customeDetail',
       componenet: (
-        <CustomerDetail
-          data={teethTratamient}
-          setTeethTratamient={setTeethTratamient}
-        />
+        <CustomerDetail />
+        // data={teethTratamient}
+        // setTeethTratamient={setTeethTratamient}
       ),
     },
     {
