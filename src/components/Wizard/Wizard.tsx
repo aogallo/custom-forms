@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import { CustomerDetail } from '../CustomerDetail/CustomerDetail'
-import { contentButtons, contentWizard } from './Wizard.css'
 import { Tratamient } from '../Tratamient/Tratamient'
 // import { TratamientPlan } from '../TratamientPlan/TratamientPlan'
 import { OtherDesease } from '../OtherDisease/OtherDesease'
@@ -79,9 +78,9 @@ export const Wizard = () => {
   ]
 
   return (
-    <div className={contentWizard}>
+    <div className=''>
       {steps[step].componenet}
-      <div className={contentButtons}>
+      <div className=''>
         <button type='button' onClick={handlePrevious}>
           Regresar
         </button>

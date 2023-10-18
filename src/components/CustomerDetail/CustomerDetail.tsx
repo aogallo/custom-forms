@@ -1,38 +1,30 @@
-import {
-  containerCustomerDetail,
-  formCustomerDetail,
-  inputForm,
-  labelForm,
-  titleCustomerDetail,
-} from './CustomerDetail.css'
 
-type CustomerDetailProps = {}
 
 export const CustomerDetail = () => {
   return (
-    <div className={containerCustomerDetail}>
-      <strong className={titleCustomerDetail}>FICHA CLÍNICA</strong>
-      <form className={formCustomerDetail}>
-        <label className={labelForm} htmlFor='name'>
+    <div className=''>
+      <strong className=''>FICHA CLÍNICA</strong>
+      <form className=''>
+        <label className='' htmlFor='name'>
           Nombre del paciente:
         </label>
-        <input className={inputForm} type='text' name='name' id='name' />
+        <input className='' type='text' name='name' id='name' />
 
-        <label className={labelForm} htmlFor='age'>
+        <label className="" htmlFor='age'>
           Edad:
         </label>
-        <input className={inputForm} type='number' name='age' id='age' />
+        <input className='' type='number' name='age' id='age' />
 
-        <label className={labelForm} htmlFor='address'>
+        <label className='' htmlFor='address'>
           Dirección:
         </label>
-        <input className={inputForm} type='text' name='address' id='address' />
+        <input className='' type='text' name='address' id='address' />
 
-        <label className={labelForm} htmlFor='phone'>
+        <label className='' htmlFor='phone'>
           Teléfono:
         </label>
         <input
-          className={inputForm}
+          className=''
           type='text'
           name='phone'
           id='phone'

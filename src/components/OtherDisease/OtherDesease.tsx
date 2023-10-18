@@ -1,17 +1,11 @@
-import {
-  groupQuestion,
-  question,
-  titleTratamient,
-} from '../Tratamient/Tratamient.css'
-import { containerImageText, teeths, textAreaTeeth } from './OtherDisease.css'
 
 export const OtherDesease = () => {
   return (
     <div>
-      <h3 className={titleTratamient}>Tratamient Form</h3>
-      <ol className={groupQuestion}>
+      <h3 className=''>Tratamient Form</h3>
+      <ol className=''>
         <li>
-          <div className={question}>
+          <div className=''>
             Convulciones o desmayos
             <section>
               <input type='radio' name='seizures' id='seizuresYes' /> Si
@@ -23,7 +17,7 @@ export const OtherDesease = () => {
         </li>
 
         <li>
-          <div className={question}>
+          <div className=''>
             Fiebre reumática
             <section>
               <input type='radio' name='fever' id='feverYes' /> Si
@@ -35,7 +29,7 @@ export const OtherDesease = () => {
         </li>
 
         <li>
-          <div className={question}>
+          <div className=''>
             Sinusitis
             <section>
               <input type='radio' name='sinusitis' id='sinusitisYes' /> Si
@@ -47,7 +41,7 @@ export const OtherDesease = () => {
         </li>
 
         <li>
-          <div className={question}>
+          <div className=''>
             Le sangran las encías?
             <section>
               <input type='radio' name='gum' id='gumYes' /> Si
@@ -59,7 +53,7 @@ export const OtherDesease = () => {
         </li>
 
         <li>
-          <div className={question}>
+          <div className=''>
             Le han salido fuegos en la boca?
             <section>
               <input type='radio' name='mouthFire' id='mouthFireYes' /> Si
@@ -71,7 +65,7 @@ export const OtherDesease = () => {
         </li>
 
         <li>
-          <div className={question}>
+          <div className=''>
             Ha tenido reacción adversa a la anestesia local?
             <section>
               <input
@@ -93,15 +87,15 @@ export const OtherDesease = () => {
         </li>
 
         <li>
-          <div className={question}>
+          <div className=''>
             Otras enfermedades:
             {/* <input type='text' name='otherDisease' /> */}
           </div>
         </li>
       </ol>
-      <div className={containerImageText}>
-        <img className={teeths} src='/teeths.png' alt='Dientes' />
-        <textarea className={textAreaTeeth} />
+      <div className=''>
+        <img className='' src='/teeths.png' alt='Dientes' />
+        <textarea className='' />
       </div>
     </div>
   )

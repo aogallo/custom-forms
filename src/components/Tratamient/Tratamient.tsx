@@ -1,18 +1,10 @@
-import {
-  extraInformation,
-  groupQuestion,
-  inputTratamient,
-  question,
-  titleTratamient,
-} from './Tratamient.css'
-
 export const Tratamient = () => {
   return (
     <div>
-      <h3 className={titleTratamient}>Tratamient Form</h3>
-      <ol className={groupQuestion}>
+      <h3 className=''>Tratamient Form</h3>
+      <ol className=''>
         <li>
-          <div className={question}>
+          <div className=''>
             <span>Actualmente está recibiendo tratamiento médico?</span>
             <section>
               <input
@@ -30,10 +22,10 @@ export const Tratamient = () => {
               />{' '}
               No
             </section>
-            <section className={extraInformation}>
+            <section className=''>
               <label htmlFor='whichTratamient'>Cuál?</label>
               <input
-                className={inputTratamient}
+                className=''
                 type='text'
                 name='whichTratamient'
                 id='whichTratamient'
@@ -45,7 +37,7 @@ export const Tratamient = () => {
         <p>Marque con una "X" si padece de una de estas enfermedades:</p>
 
         <li>
-          <div className={question}>
+          <div className=''>
             <span>Alteraciones cardiacas</span>
             <section>
               <input
@@ -67,7 +59,7 @@ export const Tratamient = () => {
         </li>
 
         <li>
-          <div className={question}>
+          <div className=''>
             <span>Alteraciones respiratorias</span>
             <section>
               <input
@@ -89,7 +81,7 @@ export const Tratamient = () => {
         </li>
 
         <li>
-          <div className={question}>
+          <div className=''>
             Alergias
             <section>
               <input type='radio' name='alergic' id='alergicYes' /> Si
@@ -101,7 +93,7 @@ export const Tratamient = () => {
         </li>
 
         <li>
-          <div className={question}>
+          <div className=''>
             Hepatitis
             <section>
               <input type='radio' name='hepatitis' id='hepatitisYes' /> Si
@@ -113,7 +105,7 @@ export const Tratamient = () => {
         </li>
 
         <li>
-          <div className={question}>
+          <div className=''>
             Problemas renales
             <section>
               <input type='radio' name='renalProblem' id='renalProblemYes' /> Si
@@ -125,7 +117,7 @@ export const Tratamient = () => {
         </li>
 
         <li>
-          <div className={question}>
+          <div className=''>
             Diabetes
             <section>
               <input type='radio' name='diabetes' id='diabetesYes' /> Si
@@ -137,7 +129,7 @@ export const Tratamient = () => {
         </li>
 
         <li>
-          <div className={question}>
+          <div className=''>
             Has estado hospitalizado los ultimos meses?
             <section>
               <input type='radio' name='hospitalized' id='hospitalizedYes' /> Si
@@ -149,7 +141,7 @@ export const Tratamient = () => {
         </li>
 
         <li>
-          <div className={question}>
+          <div className=''>
             Toma algun medicamento?
             <section>
               <input type='radio' name='medicament' id='medicamentYes' /> Si
@@ -157,10 +149,10 @@ export const Tratamient = () => {
             <section>
               <input type='radio' name='medicament' id='medicamentNo' /> No
             </section>
-            <section className={extraInformation}>
+            <section className=''>
               <label htmlFor='whichMedicament'>Cuál?</label>
               <input
-                className={inputTratamient}
+                className=''
                 type='text'
                 name='whichMedicament'
                 id='whichMedicament'
@@ -170,7 +162,7 @@ export const Tratamient = () => {
         </li>
 
         <li>
-          <div className={question}>
+          <div className=''>
             Hemorragias
             <section>
               <input type='radio' name='hemorrhages' id='hemorrhagesYes' /> Si
